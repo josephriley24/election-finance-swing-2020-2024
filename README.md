@@ -1,8 +1,8 @@
 # election-finance-swing-2020-2024
-An examination of changes in campaign financing in swing states between the 2020 and 2024 general elections.
+An examination of changes in campaign financing in swing states between the 2020 and 2024 presidential general elections.
 
 Election Finance Changes 2020-2024
-Nearly $2 billion was spent by candidates in the 2024 election cycle. This study surveys party-to-party shifts in financing between the 2020 and 2024 elections, looking specifically at seven "swing states:" Pennsylvania, Wisconsin, Michigan, Georgia, Arizona, Nevada, and North Carolina.
+Nearly $2 billion was spent by presidential candidates in the 2024 election cycle. This study surveys party-to-party shifts in financing between the 2020 and 2024 elections, looking specifically at seven "swing states:" Pennsylvania, Wisconsin, Michigan, Georgia, Arizona, Nevada, and North Carolina.
 
 Link to project: http://recruiters-love-seeing-live-demos.com/
 
