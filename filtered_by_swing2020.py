@@ -113,6 +113,6 @@ trimmed['zip'] = zip5
 # drop old zip column
 trimmed = trimmed.drop(columns='ZIP_CODE')
 trimmed = trimmed.rename(columns={'zip': 'ZIP_CODE'})
-
+trimmed.to_pickle('indiv_swing_2020.zip')
 
 
