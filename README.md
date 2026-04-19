@@ -1,17 +1,22 @@
 # election-finance-swing-2020-2024
 An examination of changes in campaign financing in swing states between the 2020 and 2024 presidential general elections.
 
-Election Finance Changes 2020-2024
+Election Finance Changes 2020-2024:
 Nearly $2 billion was spent by presidential candidates in the 2024 election cycle. This study surveys party-to-party shifts in financing between the 2020 and 2024 elections, looking specifically at seven "swing states:" Pennsylvania, Wisconsin, Michigan, Georgia, Arizona, Nevada, and North Carolina.
 
-Link to project: http://recruiters-love-seeing-live-demos.com/
-
-alt tag
 
 How It's Made:
 Tech used: Python, QGIS ...?
 
-Here's where you can go to town on how you actually built this thing. Write as much as you can here, it's totally fine if it's not too much just make sure you write something. If you don't have too much experience on your resume working on the front end that's totally fine. This is where you can really show off your passion and make up for that ten fold.
+I started off with some files we used for exercises based around FEC data - com_cand_info.csv, a CSV covering presidential campaign committees during the 2020 campaign cycle, as well as contributions.zip, a cleaned-up version of individual contribution data from 2020. To accomplish my goal of examining partisan swing in ZIP code-level data between the 2024 and 2020 presidential general elections, I compiled individual data on both elections, then aggregated by ZIP, candidate, and party. Going step-by-step:
+
+1. Creating a com_cand_info equivalent for 2024. For this, I downloaded the committee master file, candidate master file and candidate summary files, as well as header files for all three, then joined them all together. This step took some work as I had difficulty finding a header file for the candidate summary file, and generally speaking those headers created significant complications in the merge process. I eventually joined the three on the candidate ID columns (for the candidate master file) and the committee ID columns (for the committee master files). Then, I filtered them down to the 2024 presidential election.
+2. Pulling population data from the census API for 2024. For this, I used the link here: https://api.census.gov/data/2024/acs/acs5/variables.json to find the total population by ZIP code.
+3. Pulling FEC contribution data and filtering by swing states. I downloaded the indiv24 zip file, then processed the zip file row-by-row by writing a for loop which removed and renamed a few columns to match columns in the individual data for 2020 (in the contributions.zip file), filtered to a list of the seven "swing states," and trimmed the zip code to the first five digits.
+4. I noticed there was a wide discrepancy in number of rows for the indiv20 and indiv24 files. After some tinkering, I recognized that I had to strip out the donations that were for non-presidential committees in 2024, and got a number (407,654) that was much closer to the 2020 number of 331,778.
+5. Aggregating by party and ZIP code. I brought party affiliation in from the com_cand_info2024 file, trimmed the ZIP codes, grouped by party and zup, and then used a pivot table to convert party affiliations into columns for use in later mapping.
+
+
 
 Optimizations
 (optional)
