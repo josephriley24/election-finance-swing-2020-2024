@@ -14,7 +14,7 @@ I started off with some files we used for exercises based around FEC data - com_
 2. Pulling population data from the census API for 2024. For this, I used the link here: https://api.census.gov/data/2024/acs/acs5/variables.json to find the total population by ZIP code.
 3. Pulling FEC contribution data and filtering by swing states. I downloaded the indiv24 zip file, then processed the zip file row-by-row by writing a for loop which removed and renamed a few columns to match columns in the individual data for 2020 (in the contributions.zip file), filtered to a list of the seven "swing states," and trimmed the zip code to the first five digits.
 4. I noticed there was a wide discrepancy in number of rows for the indiv20 and indiv24 files. After some tinkering, I recognized that I had to strip out the donations that were for non-presidential committees in 2024, and got a number (407,654) that was much closer to the 2020 number of 331,778.
-5. Aggregating by party and ZIP code. I brought party affiliation in from the com_cand_info2024 file, trimmed the ZIP codes, grouped by party and zup, and then used a pivot table to convert party affiliations into columns for use in later mapping.
+5. Aggregating by party and ZIP code. I brought party affiliation in from the com_cand_info2024 file, trimmed the ZIP codes, grouped by party and ZIP, and then used a pivot table to convert party affiliations into columns for use in later mapping.
 
 
 
