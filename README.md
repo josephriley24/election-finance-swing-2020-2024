@@ -6,7 +6,7 @@ Nearly $2 billion was spent by presidential candidates in the 2024 election cycl
 
 
 How It's Made:
-Tech used: Python, QGIS ...?
+Tech used: Python, QGIS, Claude Project mode for organizational purposes.
 
 I started off with some files we used for exercises based around FEC data - com_cand_info.csv, a CSV covering presidential campaign committees during the 2020 campaign cycle, as well as contributions.zip, a cleaned-up version of individual contribution data from 2020. To accomplish my goal of examining partisan swing in ZIP code-level data between the 2024 and 2020 presidential general elections, I compiled individual data on both elections, then aggregated by ZIP, candidate, and party. Going step-by-step:
 
