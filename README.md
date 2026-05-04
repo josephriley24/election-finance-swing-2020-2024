@@ -1,12 +1,19 @@
-# election-finance-swing-2020-2024
+# Election Finance Changes 2020-2024
 An examination of changes in campaign financing in swing states between the 2020 and 2024 presidential general elections.
 
-Election Finance Changes 2020-2024:
-Nearly $2 billion was spent by presidential candidates in the 2024 election cycle. This study surveys party-to-party shifts in financing between the 2020 and 2024 elections, looking specifically at seven "swing states:" Pennsylvania, Wisconsin, Michigan, Georgia, Arizona, Nevada, and North Carolina.
+## Summary
+Nearly $2 billion was spent by presidential candidates in the 2024 election cycle. This study surveys party-to-party shifts in financing between the 2020 and 2024 elections, looking specifically at seven "swing states:" Pennsylvania, Wisconsin, Michigan, Georgia, Arizona, Nevada, and North Carolina. The first analysis performed was looking at campaign financing in these states solely in 2024 -- an analysis which found large advantages in individual fundraising for Democratic candidate Kamala Harris over Republican candidate Donald Trump in all seven states.
 
+Next...
 
-How It's Made:
-Tech used: Python, QGIS, Claude Project mode for organizational purposes.
+## Data Inputs:
+From the FEC https://www.fec.gov/data/browse-data/?tab=bulk-data: cm24.zip, cn24.zip, and weball24.zip. 
+
+For population data: https://api.census.gov/data/2024/acs/acs5/variables.json
+
+There were two files which we had previously used for exercises based around 2020 FEC data. Those are contributions.zip and com_cand_info.csv, which can be found here???
+
+Hardcoded national data from OpenSecrets comes from here: https://www.opensecrets.org/2020-presidential-race and here: https://www.opensecrets.org/2024-presidential-race
 
 I started off with some files we used for exercises based around FEC data - com_cand_info.csv, a CSV covering presidential campaign committees during the 2020 campaign cycle, as well as contributions.zip, a cleaned-up version of individual contribution data from 2020. To accomplish my goal of examining partisan swing in ZIP code-level data between the 2024 and 2020 presidential general elections, I compiled individual data on both elections, then aggregated by ZIP, candidate, and party. Going step-by-step:
 
