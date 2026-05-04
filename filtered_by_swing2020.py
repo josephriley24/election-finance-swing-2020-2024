@@ -56,7 +56,7 @@ keepvars = ['CMTE_ID', 'STATE', 'ZIP_CODE', 'PGI', 'date', 'amt']
 trimmed = contrib[keepvars]
 
 # save a pickled version of 'trimmed'
-trimmed.to_pickle('contrib_all_pkl.zip')
+trimmed.to_pickle('indiv_national_2020.zip')
 
 # print number of records in pickled dataframe
 print('Number of 2020 Primary or General Election Contributions made in 2019 or later:',len(trimmed))
