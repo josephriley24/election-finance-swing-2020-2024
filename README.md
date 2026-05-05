@@ -11,7 +11,7 @@ From the FEC https://www.fec.gov/data/browse-data/?tab=bulk-data: cm24.zip, cn24
 
 For population data: https://api.census.gov/data/2024/acs/acs5/variables.json
 
-hose are contributions.zip and com_cand_info.csv. These files were provided by Pete Wilcoxen of Syracuse University.
+Those are contributions2020.zip and com_cand_info.csv. These files were provided by Pete Wilcoxen of Syracuse University.
 
 The Pennsylvania zip code data came from here: https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html
 
