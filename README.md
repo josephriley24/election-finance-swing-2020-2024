@@ -13,7 +13,7 @@ For population data: https://api.census.gov/data/2024/acs/acs5/variables.json
 
 There were two files which we had previously used for exercises based around 2020 FEC data. Those are contributions.zip and com_cand_info.csv, which can be found here???
 
-Pennsylvania zip data also came from a class exercise - ask about this.
+The Pennsylvania zip code data came from here: https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html
 
 I started off with some files we used for exercises based around FEC data - com_cand_info.csv, a CSV covering presidential campaign committees during the 2020 campaign cycle, as well as contributions.zip, a cleaned-up version of individual contribution data from 2020. To accomplish my goal of examining partisan swing in ZIP code-level data between the 2024 and 2020 presidential general elections, I compiled individual data on both elections, then aggregated by ZIP, candidate, and party. Going step-by-step:
 
